@@ -1,0 +1,18 @@
+- type: entity
+  abstract: true
+  parent: [BaseItem, PowerCellSlotSmallItem]
+  id: AutopsyScanner
+  name: Autopsy scanner
+  description: "The clown died of old age"
+  components:
+  - type: Sprite
+    sprite: /Textures/Objects/Devices/autops_scanner.rsi
+    layers:
+    - state: icon
+  - type: ActivatableUIRequiresPowerCell
+  - type: ItemToggle
+    onUse: false # above component does the toggling
+  - type: PowerCellDraw
+    drawRate: 0
+    useRate: 20
+  - type: ToggleCellDraw

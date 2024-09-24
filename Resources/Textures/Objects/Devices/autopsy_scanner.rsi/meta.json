@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "copyright" : "Taken from https://github.com/tgstation/tgstation/blob/master/icons/obj/devices/scanner.dmi",
+    "license" : "CC-BY-SA-3.0",
+    "size" : {
+       "x" : 32,
+       "y" : 32
+    },
+    "states" : [
+       {
+        "name": "icon"
+       }
+    ]
+ }
+ 
