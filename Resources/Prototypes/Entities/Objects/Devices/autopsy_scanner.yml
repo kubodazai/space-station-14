@@ -5,13 +5,13 @@
   description: "The clown died of old age"
   components:
   - type: Sprite
-    sprite: /Textures/Objects/Devices/autopsy_scanner.rsi
+    sprite: Objects/Devices/autopsy_scanner.rsi
     state: icon
   - type: item
-    sprite: /Textures/Objects/Devices/autopsy_scanner.rsi
+    sprite: Objects/Devices/autopsy_scanner.rsi
     size: Tiny
   - type: Clothing
-    sprite: /Textures/Objects/Devices/autopsy_scanner.rsi
+    sprite: Objects/Devices/autopsy_scanner.rsi
     slots: [Belt]
     quickEquip: false
   
