@@ -2,13 +2,15 @@
   parent: BaseItem
   id: AutopsyScanner
   name: Autopsy scanner
-  description: The clown died of old age
+  description: The clown died of old age.
   components:
   - type: Sprite
     sprite: Objects/Devices/autopsy_scanner.rsi
     state: icon
-  - type: item
+  - type: Item
+    size: Small
+  - type: Clothing
     sprite: Objects/Devices/autopsy_scanner.rsi
-    size: Tiny
- 
+    slots: [Belt]
+    quickEquip: false
   
