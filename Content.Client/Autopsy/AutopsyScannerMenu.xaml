@@ -9,7 +9,7 @@
                 HorizontalExpand="True"
                 Access="Public"
                 Disabled="True"
-                Text="{Loc 'forensic-scanner-interface-print'}" />
+                Text="{Loc 'autopsy-scanner-interface-print'}" />
             <Button Name="Clear"
                 TextAlign="Center"
                 HorizontalExpand="True"

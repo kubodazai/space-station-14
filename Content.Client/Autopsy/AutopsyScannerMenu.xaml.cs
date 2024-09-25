@@ -5,7 +5,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Timing;
 using Content.Shared.Forensics;
 
-namespace Content.Client.Forensics
+namespace Content.Client.Medical
 {
     [GenerateTypedNameReferences]
     public sealed partial class AutopsyScannerMenu : DefaultWindow
@@ -47,13 +47,13 @@ namespace Content.Client.Forensics
                 text.AppendLine(fingerprint);
             }
             text.AppendLine();
-            text.AppendLine(Loc.GetString("forensic-scanner-interface-fibers"));
+            text.AppendLine(Loc.GetString("autopsy-scanner-interface-fibers"));
             foreach (var fiber in msg.Fibers)
             {
                 text.AppendLine(fiber);
             }
             text.AppendLine();
-            text.AppendLine(Loc.GetString("forensic-scanner-interface-dnas"));
+            text.AppendLine(Loc.GetString("autopsy-scanner-interface-dnas"));
             foreach (var dna in msg.TouchDNAs)
             {
                 text.AppendLine(dna);
@@ -65,7 +65,7 @@ namespace Content.Client.Forensics
                 text.AppendLine(dna);
             }
             text.AppendLine();
-            text.AppendLine(Loc.GetString("forensic-scanner-interface-residues"));
+            text.AppendLine(Loc.GetString("autopsy-scanner-interface-residues"));
             foreach (var residue in msg.Residues)
             {
                 text.AppendLine(residue);

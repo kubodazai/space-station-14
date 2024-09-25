@@ -9,21 +9,25 @@
     state: icon
   - type: Item
     size: Small
+    storedRotation: 90
   - type: Clothing
     sprite: Objects/Devices/autopsy_scanner.rsi
     slots: [Belt]
     quickEquip: false
-   #- type: ActivatableUI
-    #key: enum.HealthAnalyzerUiKey.Key
-  #- type: UserInterface
-   # interfaces:
-    #  enum.HealthAnalyzerUiKey.Key:
-     #   type: HealthAnalyzerBoundUserInterface
+  type: ActivatableUI
+    key: enum.HealthAnalyzerUiKey.Key
+    inHandsOnly: true
+    requireActiveHand: false
+  - type: UserInterface
+    interfaces:
+      enum.HealthAnalyzerUiKey.Key:
+        type: HealthAnalyzeBoundUserInterface
+  - type: HealthAnalyzer
+    scanningEndSound:
+      path: "/Audio/Items/Medical/healthscanner.ogg"
   - type: ItemToggle
     onUse: false
-  #- type: HealthAnalyzer
-   # scanningEndSound:
-    #  path: "/Audio/Items/Medical/healthscanner.ogg"
+  
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -40,7 +44,7 @@
   - type: PowerCellDraw
     drawRate: 1.2 #Calculated for 5 minutes on a small cell
   - type: ToggleCellDraw
- # - type: ActivatableUIRequiresPowerCell
+  #- type: ActivatableUIRequiresPowerCell
 
   
 - type: entity
