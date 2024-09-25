@@ -6,8 +6,7 @@
   components:
   - type: Sprite
     sprite: /Textures/Objects/Devices/autopsy_scanner.rsi
-    layers:
-    - state: icon
+    state: icon
   - type: item
     sprite: /Textures/Objects/Devices/autopsy_scanner.rsi
     size: Tiny
