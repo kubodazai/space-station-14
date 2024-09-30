@@ -1,0 +1,32 @@
+- type: constructionGraph
+  id: BonfireCraft
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: bonfire
+          completed:
+            - !type:SnapToGrid { } 
+          steps:
+            - material: Wood
+              amount: 3
+              doAfter: 3
+            - tag: Log
+              name: log
+              icon:
+                sprite: Objects/Specific/Hydroponics/towercap.rsi
+                state: icon
+                doAfter: 1
+     - node: bonfire
+      entity: Bonfire
+      edges:
+        - to: start
+          completed:
+            - !type:SpawnPrototype
+              prototype:  MaterialWoodPlank1
+              amount: 1
+            - !type:DeleteEntity 
+           steps:
+            - tool: Screwing
+              doAfter: 1
+            -
