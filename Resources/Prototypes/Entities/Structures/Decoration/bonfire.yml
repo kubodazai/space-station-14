@@ -17,6 +17,9 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: Wood
+  - type: Construction
+    graph: BonfireGraph
+    node: boneFire  
   - type: Destructible
     thresholds:
       - trigger:
